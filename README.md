@@ -1,5 +1,7 @@
 # Can You Hear Me? Automatic Speech Recognition Pipeline for Distress Intelligence.
 
+This project demonstrates the full lifecycle of an AI solution for a critical use case: deploying a scalable Automatic Speech Recognition (ASR) microservice, finetuning it for high accuracy, and building an advanced intelligence layer for urgent hotword and semantic detection.
+
 # Project Lifecycle and Deliverables
 The project follows the complete AI service lifecycle for the Automatic Speech Recognition (ASR) Pipeline, with each phase delivering a critical component.
 
@@ -11,15 +13,15 @@ The project follows the complete AI service lifecycle for the Automatic Speech R
 | **4. Post-Processing** | `postprocessing/` | Transform raw transcripts into actionable intelligence. | **Detection results** enhanced with **AI-powered similarity** analysis. |
 
 # Project Overview
-- Phase 1: Deployment 🚀
+- Phase 1: Deployment 
     - To establish the foundational infrastructure by hosting the base ASR model as a scalable microservice and outputting a reliable Dockerized API.
     - Created a lightweight web service with a primary inference endpoint for audio transcription, then containerize it for consistent deployment.
-- Phase 2: Finetuning 🧠
+- Phase 2: Finetuning 
     - To improve model performance by finetuning the base ASR model on custom data.
-- Phase 3: Evaluation 📊
+- Phase 3: Evaluation 
     - To quantify the model's performance gains against the baseline model.
     - Compared the finetuned model against the baseline model using quantitative and qualitative analysis and propose future improvements.
-- Phase 4: Post-Processing and Intelligence 🚨
+- Phase 4: Post-Processing and Intelligence 
     - To supplement an intelligence layer to filter critical information.
     - Performed both exact string matching for specific hotwords and advanced semantic similarity analysis using an BERT embedding model.
 
