@@ -7,23 +7,23 @@ The project follows the complete AI service lifecycle for the Automatic Speech R
 
 | Phase | Directory | Goal | Key Deliverables |
 | :--- | :--- | :--- | :--- |
-| **1. Deployment** | `deployment/` | Host the base ASR model as a scalable microservice. | **Docker Image** with the respective inference endpoint. |
-| **2. Finetuning** | `train/` | Optimize the model's accuracy using the Common Voice dataset. | Custom finetuned model weights. |
-| **3. Evaluation** | `eval/` | Quantify performance gains and outline the strategic roadmap. | **Comparison** detailing baseline vs. finetuned performance. |
-| **4. Post-Processing** | `postprocessing/` | Transform raw transcripts into actionable intelligence. | **Detection results** enhanced with **AI-powered similarity** analysis. |
+| **Model Training** | `train/` | Optimize the model's accuracy using the Common Voice dataset. | Custom finetuned model weights. |
+| **Evaluation** | `eval/` | Quantify performance gains and outline the strategic roadmap. | **Comparison** detailing baseline vs. finetuned performance. |
+| **Post-Processing** | `postprocessing/` | Transform raw transcripts into actionable intelligence. | **Detection results** enhanced with **AI-powered similarity** analysis. |
+| **Deployment** | `deployment/` | Host the base ASR model as a scalable microservice. | **Docker Image** with the respective inference endpoint. |
 
 # Project Overview
-- Phase 1: Deployment 
-    - To establish the foundational infrastructure by hosting the base ASR model as a scalable microservice and outputting a reliable Dockerized API.
-    - Created a lightweight web service with a primary inference endpoint for audio transcription, then containerize it for consistent deployment.
-- Phase 2: Finetuning 
+- Phase 1: Model Training 
     - To improve model performance by finetuning the base ASR model on custom data.
-- Phase 3: Evaluation 
+- Phase 2: Evaluation 
     - To quantify the model's performance gains against the baseline model.
     - Compared the finetuned model against the baseline model using quantitative and qualitative analysis and propose future improvements.
-- Phase 4: Post-Processing and Intelligence 
+- Phase 3: Post-Processing 
     - To supplement an intelligence layer to filter critical information.
     - Performed both exact string matching for specific hotwords and advanced semantic similarity analysis using an BERT embedding model.
+- Phase 4: Deployment 
+    - To establish the foundational infrastructure by hosting the base ASR model as a scalable microservice and outputting a reliable Dockerized API.
+    - Created a lightweight web service with a primary inference endpoint for audio transcription, then containerize it for consistent deployment.
 
 ## Technology Stack Overview
 
